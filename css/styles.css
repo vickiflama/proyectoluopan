@@ -236,8 +236,7 @@ sup {
 }
 
 a {
-  color: ##198754;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: ##198754;
@@ -7833,8 +7832,12 @@ textarea.form-control-lg {
 }
 
 .bg-light {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+
 }
 
 .bg-dark {
@@ -11454,3 +11457,74 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
+#carouselExample{
+  width: 38%;
+  padding-left: 1%;
+}
+.carousel-item {
+  width: 600px;
+  height: auto;
+}
+
+.lugar{
+  width: 60%;
+  padding-right: 1%;
+}
+
+.carousel-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: underline;
+}
+
+.fecha {
+  display: flex;
+  justify-content: center;
+}
+
+.datadeviaje{
+  display: flex;
+  justify-content: flex-start;
+  font-size: medium;
+  line-height: 0.5;
+  font-weight: bold;
+}
+
+.info{
+  font-size: small;
+}
+
+.precio{
+  color:#146c43 ;
+  font-weight: bolder;
+  font-size:large;
+}
+
+
+#carouselExample2{
+  width: 38%;
+  padding-left: 1%;
+}
+
+#carouselExample3{
+  width: 38%;
+  padding-left: 1%;
+}
+
+#carouselExample4 {
+  width: 38%;
+  padding-left: 1%;
+}
+
+.redsocial{
+  text-decoration: none;
+  width: 29px;
+  color: #6c757d;
+}
