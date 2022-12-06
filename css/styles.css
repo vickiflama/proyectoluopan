@@ -70,6 +70,51 @@
   box-sizing: border-box;
 }
 
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+  max-width: 1920px;
+}
+#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgb(25 135 84 / 90%);
+  transition: opacity 0.25s ease;
+  text-align: center;
+  
+
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.redsocial{
+  text-decoration: none;
+  width: 29px;
+  color: #6c757d;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -11419,69 +11464,24 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
-  max-width: 1920px;
-}
-#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
-  position: relative;
-  display: block;
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  background: rgb(25 135 84 / 90%);
-  transition: opacity 0.25s ease;
-  text-align: center;
-  
 
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
-}
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
-}
-
-#carouselExample{
-  width: 38%;
-  padding-left: 1%;
-}
-.carousel-item {
-  width: 600px;
-  height: auto;
-}
-
-.lugar{
-  width: 60%;
-  padding-right: 1%;
-}
 
 .carousel-section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 20px;
+  justify-content: center;
+  margin-left: 20px;
+ box-sizing: border-box;
+ transition: 0.5s;
+ 
 }
+
 
 .titulo {
   display: flex;
-  justify-content: flex-start;
-  text-decoration: underline;
+  justify-content: center;
+  color: black;
+  padding-top: 8rem;
 }
 
 .fecha {
@@ -11489,24 +11489,79 @@ header.masthead h1, header.masthead .h1 {
   justify-content: center;
 }
 
+.cajadata{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.data{
+  height: 60%;
+  
+}
+
+
+.data1{
+border: lightgray 4px solid;
+width: 35%;
+transition: 0.5s;
+
+}
+
+.data1:hover{
+  transform: scale(1.2);
+}
+
+
+
 .datadeviaje{
   display: flex;
   justify-content: flex-start;
-  font-size: medium;
-  line-height: 0.5;
-  font-weight: bold;
+  font-size: 125%;
+  
 }
 
+.datadeviaje1{
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 150%;
+}
 .info{
+  display: flex;
+  justify-content: center;
   font-size: small;
 }
 
 .precio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 5%;
   color:#146c43 ;
   font-weight: bolder;
-  font-size:large;
+  font-size: medium;
 }
 
+.consulta{
+display: flex;
+justify-content: center;
+}
+
+
+#carouselExample {
+  
+  width: 100%;
+}
+
+.img1 {
+  margin-top: 2%;
+  margin-left: 15%;
+  
+}
 
 #carouselExample2{
   width: 38%;
@@ -11523,8 +11578,23 @@ header.masthead h1, header.masthead .h1 {
   padding-left: 1%;
 }
 
-.redsocial{
-  text-decoration: none;
-  width: 29px;
-  color: #6c757d;
+.container1{
+  display: flex;
+  justify-content: space-around;
+  
 }
+.columnas{
+  padding-top: 2rem;
+  padding: 20px;
+
+}
+
+.column{
+  transition: 0.5s;
+  padding-top: 20px;
+
+}
+.column:hover{
+  transform: scale(1.1)
+}
+
