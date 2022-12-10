@@ -114,6 +114,140 @@
   color: #6c757d;
 }
 
+.carousel-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 20px;
+ box-sizing: border-box;
+ transition: 0.5s;
+ 
+}
+
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-top: 8rem;
+}
+
+.fecha {
+  display: flex;
+  justify-content: center;
+}
+
+.cajadata{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.data{
+  height: 60%;
+  
+}
+
+
+.data1{
+border: lightgray 4px solid;
+width: 35%;
+transition: 0.5s;
+
+}
+
+.data1:hover{
+  transform: scale(1.2);
+}
+
+
+
+.datadeviaje{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 125%;
+  
+}
+
+.datadeviaje1{
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 150%;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+.precio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 5%;
+  color:#146c43 ;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.consulta{
+display: flex;
+justify-content: center;
+}
+
+
+#carouselExample {
+  
+  width: 100%;
+}
+
+.img1 {
+  margin-top: 2%;
+  margin-left: 15%;
+  
+}
+
+#carouselExample2{
+  width: 38%;
+  padding-left: 1%;
+}
+
+#carouselExample3{
+  width: 38%;
+  padding-left: 1%;
+}
+
+#carouselExample4 {
+  width: 38%;
+  padding-left: 1%;
+}
+
+.container1{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.columnas{
+  padding-top: 2rem;
+  padding: 20px;
+
+}
+
+.column{
+  transition: 0.5s;
+  padding-top: 20px;
+
+}
+.column:hover{
+  transform: scale(1.1)
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -11370,6 +11504,14 @@ hr.divider-light {
   background-color: #fff;
 }
 
+hr.divider1{
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: lightgrey;
+  opacity: 1;
+}
+
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
@@ -11465,136 +11607,64 @@ header.masthead h1, header.masthead .h1 {
 }
 
 
-
-.carousel-section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 20px;
- box-sizing: border-box;
- transition: 0.5s;
- 
-}
-
-
-.titulo {
-  display: flex;
-  justify-content: center;
-  color: black;
-  padding-top: 8rem;
-}
-
-.fecha {
-  display: flex;
-  justify-content: center;
-}
-
-.cajadata{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 5%;
-}
-.data{
-  height: 60%;
+@media (max-width: 992px){
+  .cajadata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   
+  .data{
+    width: 100vh;
+  }
+  .data1 {
+    width: 100vh;
+    
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .datadeviaje{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .datadeviaje1 {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
-
-.data1{
-border: lightgray 4px solid;
-width: 35%;
-transition: 0.5s;
-
-}
-
-.data1:hover{
-  transform: scale(1.2);
-}
-
-
-
-.datadeviaje{
-  display: flex;
-  justify-content: flex-start;
-  font-size: 125%;
+@media (max-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .legajo{
+    display: flex;
+    justify-content: center;
+  }
+  .direccion{
+    display: flex;
+    justify-content: center;
   
+  }
+  .redes{
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.datadeviaje1{
-  display: flex;
-  justify-content: flex-start;
-  text-decoration: underline;
-  font-weight: bolder;
-  font-size: 150%;
-}
-.info{
-  display: flex;
-  justify-content: center;
-  font-size: small;
-}
-
-.precio{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  padding: 5%;
-  color:#146c43 ;
-  font-weight: bolder;
-  font-size: medium;
-}
-
-.consulta{
-display: flex;
-justify-content: center;
-}
-
-
-#carouselExample {
-  
-  width: 100%;
-}
-
-.img1 {
-  margin-top: 2%;
-  margin-left: 15%;
-  
-}
-
-#carouselExample2{
-  width: 38%;
-  padding-left: 1%;
-}
-
-#carouselExample3{
-  width: 38%;
-  padding-left: 1%;
-}
-
-#carouselExample4 {
-  width: 38%;
-  padding-left: 1%;
-}
-
-.container1{
-  display: flex;
-  justify-content: space-around;
-  
-}
-.columnas{
-  padding-top: 2rem;
-  padding: 20px;
-
-}
-
-.column{
-  transition: 0.5s;
-  padding-top: 20px;
-
-}
-.column:hover{
-  transform: scale(1.1)
+@media (max-width: 992px) {
+  .carousel-section {display: flex;
+    width: 80vh;
+  }
+  .img1 {
+    width: 60vh;
+  }
 }
 
