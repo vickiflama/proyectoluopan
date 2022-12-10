@@ -211,20 +211,7 @@ justify-content: center;
   
 }
 
-#carouselExample2{
-  width: 38%;
-  padding-left: 1%;
-}
 
-#carouselExample3{
-  width: 38%;
-  padding-left: 1%;
-}
-
-#carouselExample4 {
-  width: 38%;
-  padding-left: 1%;
-}
 
 .container1{
   display: flex;
@@ -11660,11 +11647,17 @@ header.masthead h1, header.masthead .h1 {
 }
 
 @media (max-width: 992px) {
-  .carousel-section {display: flex;
-    width: 80vh;
+  .carousel-section{
+    width: 100vw;
+    margin-left: 0%;
+    
   }
+
   .img1 {
-    width: 60vh;
+    display: flex;
+    width: 90vw;
+    margin-left: 5%;
   }
+ 
 }
 
